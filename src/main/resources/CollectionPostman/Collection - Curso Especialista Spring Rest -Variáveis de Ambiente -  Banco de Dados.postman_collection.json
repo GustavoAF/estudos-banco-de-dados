@@ -1,0 +1,797 @@
+{
+	"info": {
+		"_postman_id": "a9d93e42-f800-4a0b-bbd4-28eafc3f9435",
+		"name": "Collection - Curso Especialista Spring Rest -Variáveis de Ambiente -  Banco de Dados",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Recursos Utilizando variáveis de ambiente",
+			"item": [
+				{
+					"name": "Get usando variáveis de ambiente",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/variavies-de-ambiente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"variavies-de-ambiente"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Recursos utilizando BD sem Spring Data JPA",
+			"item": [
+				{
+					"name": "Get sem usar JPA - Cozinha",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/getbanco-de-dados//sem-spring-data-cozinha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"getbanco-de-dados",
+								"",
+								"sem-spring-data-cozinha"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get sem usar JPA - Restaurante",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/getbanco-de-dados/sem-spring-data-restaurante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"getbanco-de-dados",
+								"sem-spring-data-restaurante"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Recursos utilizando BD com Spring Data JPA - Cozinha",
+			"item": [
+				{
+					"name": "Listando todos os registros",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/cozinha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"cozinha"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca registro por Id na url @PathVariable",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/cozinha/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"cozinha",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrando um novo registro",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\n\t\"id\" : \"20\",\n\t\"nome\" : \"quarta\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/cozinha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"cozinha"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterando registro inteiro com @RequestBody",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nome\": \"Brasileira\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/cozinha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"cozinha"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterando registro inteiro com @RequestBody e @PathVariable",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\" : \"alterado\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/cozinha/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"cozinha",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletando registro com @RequestBody",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"nome\": \"Tailandesa\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/cozinha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"cozinha"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletando registro com @PathVariable",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/cozinha/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"cozinha",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterando um campo do registro @RequestBody e @PathVariable",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\n\t\"nome\": \"path\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/cozinha/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"cozinha",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Recursos utilizando BD com Spring Data JPA - Restaurante",
+			"item": [
+				{
+					"name": "Listando todos os registros",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/restaurante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"restaurante"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca registro por Id na url @PathVariable",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/restaurante/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"restaurante",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrando um novo registro",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"nome\": \"esse 3\",\n    \"descricao\": \"muito lulu\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/restaurante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"restaurante"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterando registro inteiro com @RequestBody",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1,\n\t\"nome\" : \"oia\",\n\t\"descricao\": \"legal\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/restaurante/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"restaurante",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterando registro inteiro com @RequestBody e @PathVariable",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"sem Id\",\n    \"descricao\": \"opaa\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/restaurante/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"restaurante",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletando registro com @RequestBody",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"id\": 1,\n        \"nome\": \"Legal\",\n        \"descricao\": \"muito bom\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/restaurante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"restaurante"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletando registro com @PathVariable",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/restaurante/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"restaurante",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterando um campo do registro @RequestBody e @PathVariable",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\n\t \"nome\": \"vai la\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-banco-de-dados/v1/restaurante/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-banco-de-dados",
+								"v1",
+								"restaurante",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
